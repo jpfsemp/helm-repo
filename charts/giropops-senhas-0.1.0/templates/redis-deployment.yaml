@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    apps: {{ .Values.redis.labels.apps  }} 
+  name: {{ .Values.redis.name  }}
+spec: 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.redis.labels.apps  }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.redis.labels.apps  }}
+    spec:
+      containers:
+      - image: {{ .Values.redis.image }}
+        name: {{ .Values.redis.name }}
+        ports:
+        - containerPort: {{ .Values.redis.service.port  }}
+        resources:
+          limits:
+           memory: {{ .Values.redis.resources.limits.memory }}
+           cpu: {{ .Values.redis.resources.limits.cpu }}
+          requests:
+            memory: {{ .Values.redis.resources.requests.memory }}
+            cpu: {{ .Values.redis.resources.requests.cpu }}

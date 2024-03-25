@@ -3,14 +3,37 @@ entries:
   giropops-senhas:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2024-03-25T12:13:49.405517006-03:00"
+    created: "2024-03-25T14:06:19.951915723-03:00"
     description: Descomplicanto Kubernetes
-    digest: 64d0205ac374e6291d35d1d41ccb2c691d333f6351a1bb6c61acc09b9ab786c0
+    digest: 007b5e1b7bed9f7da2b241da92500b11fe5d66105cde1a56444cd4f33a02d875
     icon: https://avatars.githubusercontent.com/u/106254225?v=4
+    name: giropops-senhas
+    sources:
+    - https://github.com/badtuxx/giropops-senhas
+    urls:
+    - https://jpfsemp.github.io/helm-repo/giropops-senhas-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2024-03-25T14:06:19.946132236-03:00"
+    description: Descomplicanto Kubernetes
+    digest: a3fdc572ffb619174f284c47a612efaf0ee2a64209c85db7eaf4fefaef703568
+    icon: https://avatars.githubusercontent.com/u/106254225?v=4
+    name: giropops-senhas
+    sources:
+    - https://github.com/badtuxx/giropops-senhas
+    urls:
+    - https://jpfsemp.github.io/helm-repo/giropops-senhas-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: "1"
+    created: "2024-03-25T14:06:19.940487016-03:00"
+    description: Descomplicanto Kubernetes
+    digest: 3b6a339af0d3a6a4ae544645543da96eb27c9e34a12d6e5b3e35ddd6648d559a
     name: giropops-senhas
     sources:
     - https://github.com/badtuxx/giropops-senhas
     urls:
     - https://jpfsemp.github.io/helm-repo/giropops-senhas-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-25T12:13:49.398918416-03:00"
+generated: "2024-03-25T14:06:19.932908483-03:00"
