@@ -1,0 +1,4 @@
+{{- range $component, $config := .Values.observability }}
+  {{- $data := dict "component" $component "config" $config }}
+  {{- include "obs.configmaps" $data | nindent 0 }}
+{{- end }}
