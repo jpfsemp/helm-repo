@@ -1,0 +1,7 @@
+deployments:
+  giropops-senhas:
+    name: "giopops-senhas-helm-repos"
+    labels:
+      app: "giropos-senhas"
+      env: "repos"
+      live: "true"
